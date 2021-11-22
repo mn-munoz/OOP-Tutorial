@@ -23,7 +23,7 @@ print("\n* Variables *\n")
 # --------------------------------------------------------------- #
 """ Escribe tu codigo despues de este comentario """
 # mi_integer = 100
-
+mi_integer = 10
 # print("El valor de mi_integer es = {} y es tipo {}".format(mi_integer, type(mi_integer)))
 
 # --------------------------------------------------------------- #
