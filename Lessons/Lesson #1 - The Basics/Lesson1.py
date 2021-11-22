@@ -97,11 +97,11 @@ z = str(1000000.0009)
 print("El valor de y es = {} y es tipo {}".format(y, type(y)))
 
 # Que pasa cuando intentamos forzar un valor int a un str? (ERROR vuelve a comentar este fragmento)
-i = int('A')
-print("El valor de i es = {} y es tipo {}".format(i, type(i)))
+#i = int('A')
+#print("El valor de i es = {} y es tipo {}".format(i, type(i)))
 
-# w = float("4.2")
-# print("El valor de w es = {} y es tipo {}".format(w, type(w)))
+w = float("4.2")
+print("El valor de w es = {} y es tipo {}".format(w, type(w)))
 
 
 tObject.printTestBedSummary()
