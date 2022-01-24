@@ -18,7 +18,7 @@ def func1():
     """Que se necesita para que este if statement regrese "Correcto"?"""
     flag = 0
 
-    if flag:
+    if flag == 0:
         return "Correcto"
     else:
         return "Incorrecto"
@@ -26,7 +26,7 @@ def func1():
 
 def func2():
     """ Cuales numeros hacen que esta funcion regrese "Correcto"?"""
-    n = 0
+    n = 15
 
     if n%2 == 0:
         return "Incorrecto"
@@ -66,8 +66,40 @@ def transformar_puntos_a_calificacion(puntaje):
     3. Si la funcion recibe un numero fuera del rango 0 - 100 ya sea mayor o menor
        la funcion debe regresar la palabra "Error"
     """
-    pass
 
+    if isinstance(puntaje, int):
+        if puntaje >= 93 and puntaje <= 100:
+            return "A+"
+        if puntaje >= 90 and puntaje <= 92:
+            return "A"
+        if puntaje >= 87 and puntaje <= 89:
+            return "B+"
+        if puntaje >= 83 and puntaje <= 86:
+            return "B"
+        if puntaje >= 80 and puntaje <= 82:
+            return "B-"
+        if puntaje >= 77 and puntaje <= 79:
+            return "C+"
+        if puntaje >= 73 and puntaje <= 76:
+            return "C"
+        if puntaje >= 70 and puntaje <= 72:
+            return "C-"
+        if puntaje >= 67 and puntaje <= 69:
+            return "D+"
+        if puntaje >= 63 and puntaje <= 66:
+            return "D"
+        if puntaje >= 60 and puntaje <= 62:
+            return "D-"
+        if puntaje >= 0 and puntaje <= 59:
+            return "F"
+        if puntaje < 0:
+            return "Error"
+        if puntaje > 100:
+            return "Error"
+    
+    if isinstance(puntaje, float):
+        return "Error"
+    
 
 
 def es_año_biciesto(año):
@@ -90,7 +122,14 @@ def es_año_biciesto(año):
     Si aun asi tienes dificultades decifrando este algoritmo visita https://www.geeksforgeeks.org/program-check-given-year-leap-year/
     para ver diferentes versiones de este algoritmo en diferentes lenguajes. 
     """
-    pass
+    if año % 400 == 0:
+        return True
+    if año % 100 == 0:
+        return False
+    if año % 4 == 0:
+        return True
+    else: 
+        return False
 
 
 
